@@ -1,7 +1,12 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:islami_app/home/Home_screen.dart';
+import 'package:islami_app/ui/home/Home_screen.dart';
+import 'package:islami_app/ui/home/hadeth_tab/hadeth_screen.dart';
+import 'package:islami_app/ui/home/quran_tab/quran_screen.dart';
+import 'package:islami_app/ui/home/radio_tab/radio_screen.dart';
+import 'package:islami_app/ui/home/sebha_tab/sebha_screen.dart';
+import 'package:islami_app/ui/home/settings_tab/settings_tab.dart';
 
 void main (){
   runApp(MyApp());
@@ -47,6 +52,11 @@ class MyApp extends StatelessWidget{
       initialRoute: HomeScreen.routeName,
       routes: {
         HomeScreen.routeName: (context) => HomeScreen(),
+        QuranScreen.routeName: (context) => QuranScreen(),
+        HadethScreen.routeName: (context) => HadethScreen(),
+        RadioScreen.routeName: (context) => RadioScreen(),
+        SebhaScreen.routeName: (context) => SebhaScreen(),
+        Settings_Screen.routeName: (context) => Settings_Screen(),
       },
 
     );
