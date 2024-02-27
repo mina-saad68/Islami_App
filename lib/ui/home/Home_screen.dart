@@ -61,7 +61,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   backgroundColor: Theme.of(context).primaryColor,
                   icon: Icon(Icons.settings), label: 'settings'),
             ]),
-        body: Center(child: tabs[selecteditem]),
+        body: tabs[selecteditem],
       ),
     );
   }
