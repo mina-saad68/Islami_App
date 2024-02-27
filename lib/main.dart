@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:islami_app/ui/home/Home_screen.dart';
 import 'package:islami_app/ui/home/hadeth_tab/hadeth_screen.dart';
+import 'package:islami_app/ui/home/hadeth_tab/hadeth_widget.dart';
 import 'package:islami_app/ui/home/quran_tab/quran_screen.dart';
 import 'package:islami_app/ui/home/quran_tab/sura_widget.dart';
 import 'package:islami_app/ui/home/radio_tab/radio_screen.dart';
@@ -67,6 +68,7 @@ class MyApp extends StatelessWidget{
         SebhaScreen.routeName: (context) => SebhaScreen(),
         Settings_Screen.routeName: (context) => Settings_Screen(),
         SuraWidget.routeName: (context) => SuraWidget(),
+        HadethWidget.routeName: (context) => HadethWidget(),
       },
 
     );
