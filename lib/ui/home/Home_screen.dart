@@ -55,7 +55,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   label: 'sebha'),
               BottomNavigationBarItem(
                   backgroundColor: Theme.of(context).primaryColor,
-                  icon: ImageIcon(AssetImage('assets/images/radio.png')),
+                  icon: ImageIcon(AssetImage('assets/images/ic_radio.png')),
                   label: 'radio'),
               BottomNavigationBarItem(
                   backgroundColor: Theme.of(context).primaryColor,
