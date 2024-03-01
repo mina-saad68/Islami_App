@@ -1,7 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:islami_app/providers/my_provider.dart';
 import 'package:islami_app/ui/bottom_sheets/language_bottom_sheets.dart';
 import 'package:islami_app/ui/bottom_sheets/theme_bottom_sheets.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+import 'package:provider/provider.dart';
+
+
 
 class Settings_Screen extends StatelessWidget {
   static const String routeName = 'settingsScreen';
@@ -10,12 +15,13 @@ class Settings_Screen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    var provider = Provider.of<MyProvider>(context);
     return Container(
       margin: EdgeInsets.symmetric(vertical: 75,horizontal: 20),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Text('Language',style: GoogleFonts.elMessiri(
+          Text(AppLocalizations.of(context)!.language,style: GoogleFonts.elMessiri(
             textStyle: TextStyle(color: Colors.black, fontSize: 24,fontWeight: FontWeight.w700),
           ),),
           SizedBox(
@@ -43,7 +49,7 @@ class Settings_Screen extends StatelessWidget {
                   border: Border.all(color: Theme.of(context).primaryColor,width: 2,),
                   borderRadius: BorderRadius.circular(15)
               ),
-              child: Text('English',style: GoogleFonts.elMessiri(
+              child: Text(provider.languageCode=='en'?AppLocalizations.of(context)!.english:AppLocalizations.of(context)!.arabic,style: GoogleFonts.elMessiri(
                 textStyle: TextStyle(color: Colors.black, fontSize: 24,fontWeight: FontWeight.w700),
               ),),
             ),
@@ -52,7 +58,7 @@ class Settings_Screen extends StatelessWidget {
           SizedBox(
             height: 60,
           ),
-          Text('Theme',style: GoogleFonts.elMessiri(
+          Text(AppLocalizations.of(context)!.theme,style: GoogleFonts.elMessiri(
             textStyle: TextStyle(color: Colors.black, fontSize: 24,fontWeight: FontWeight.w700),
           ),),
           SizedBox(
@@ -78,7 +84,7 @@ class Settings_Screen extends StatelessWidget {
                   border: Border.all(color: Theme.of(context).primaryColor,width: 2,),
                   borderRadius: BorderRadius.circular(15)
               ),
-              child: Text('dark',style: GoogleFonts.elMessiri(
+              child: Text(AppLocalizations.of(context)!.dark,style: GoogleFonts.elMessiri(
                 textStyle: TextStyle(color: Colors.black, fontSize: 24,fontWeight: FontWeight.w700),
               ),),
             ),

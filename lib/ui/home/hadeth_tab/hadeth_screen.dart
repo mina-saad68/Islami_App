@@ -3,6 +3,8 @@ import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:islami_app/ui/home/hadeth_tab/hadeth_model.dart';
 import 'package:islami_app/ui/home/hadeth_tab/hadeth_widget.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+
 
 class HadethScreen extends StatefulWidget {
   static const String routeName = 'hadethScreen';
@@ -32,7 +34,7 @@ class _HadethScreenState extends State<HadethScreen> {
           thickness: 2,
         ),
         Text(
-          'ahadeth',
+          AppLocalizations.of(context)!.ahadeth,
           style: GoogleFonts.elMessiri(
             textStyle: TextStyle(
                 color: Colors.black,

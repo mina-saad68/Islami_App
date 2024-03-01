@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+
 
 class RadioScreen extends StatelessWidget {
   static const String routeName = 'radioScreen';
@@ -20,7 +22,7 @@ class RadioScreen extends StatelessWidget {
           SizedBox(
             height: 45,
           ),
-          Text('aza3t el quran ',style: GoogleFonts.elMessiri(
+          Text(AppLocalizations.of(context)!.aza3etElQuran,style: GoogleFonts.elMessiri(
             textStyle: TextStyle(color: Colors.black, fontSize: 24,fontWeight: FontWeight.w600),
           ),),
           SizedBox(

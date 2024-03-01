@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+
 
 class SebhaScreen extends StatefulWidget {
   static const String routeName = 'sebhaScreen';
@@ -49,7 +51,7 @@ class _SebhaScreenState extends State<SebhaScreen> {
           height: 25,
         ),
         Text(
-          'num of tasbeh',
+          AppLocalizations.of(context)!.numOfTasbeh,
           style: GoogleFonts.elMessiri(
             textStyle: TextStyle(
                 color: Colors.black, fontSize: 25, fontWeight: FontWeight.w600),

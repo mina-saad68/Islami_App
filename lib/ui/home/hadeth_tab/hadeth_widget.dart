@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:islami_app/ui/home/hadeth_tab/hadeth_model.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+
 
 class HadethWidget extends StatelessWidget {
 

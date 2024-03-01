@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:islami_app/ui/home/quran_tab/sura_model.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+
 
 class SuraWidget extends StatefulWidget {
   static const routeName = 'suraWidget';
